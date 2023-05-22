@@ -1,0 +1,2 @@
+1) Check PulseTailFamily
+2) Change I-V figure in Ramp
