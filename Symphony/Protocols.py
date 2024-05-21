@@ -14,6 +14,7 @@ from OrnsteinUhlenbeckClass import OrnsteinUhlenbeck
 from PairedPulseFamilyClass import PairedPulseFamily
 from PulseClass import Pulse
 from PulseFamilyClass import PulseFamily
+from PulseFamilyBothClass import PulseFamilyBoth
 from PulseFamilyDynamicClampClass import PulseFamilyDynamicClamp
 from PulseFamilyInactivationClass import PulseFamilyInactivation
 from PulseFamilyLeakSubClass import PulseFamilyLeakSub
@@ -36,6 +37,8 @@ protocols = { 'BlueGeneralStim'        : BlueGeneralStim,
               'GapFree'                : GapFree,
               'GapFreeBoth'            : GapFreeBoth,
               'GapFreeRecord'          : GapFreeRecord,
+              'LimePulseFamily'        : BluePulseFamily,
+              'LimeStepRamp'           : BlueStepRamp,
               'Nogaret'                : Nogaret,
               'NogaretFuraHamamatsu'   : NogaretFuraHamamatsu,
               'BluePulseFamily'        : BluePulseFamily,
@@ -44,6 +47,7 @@ protocols = { 'BlueGeneralStim'        : BlueGeneralStim,
               'PairedPulseFamily'      : PairedPulseFamily,
               'Pulse'                  : Pulse,
               'PulseFamily'            : PulseFamily,
+              'PulseFamilyBoth'        : PulseFamilyBoth,
               'PulseFamilyDynamicClamp': PulseFamilyDynamicClamp,
               'PulseFamilyInactivation': PulseFamilyInactivation,
               'PulseFamilyLeakSub'     : PulseFamilyLeakSub,

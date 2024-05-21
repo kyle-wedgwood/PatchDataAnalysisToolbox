@@ -22,7 +22,10 @@ class PulseFamily( AbstractProtocol):
 
         ind = (self.time > self['preTime']) & (self.time < self['preTime'] + self['stimTime'])
 
+        # Create reference stimuli
+        stimulus_ref = np.zeros( self['pulsesInFamily'])
         for i in range( self['pulsesInFamily']):
+            stimulus_ref[i] = self['firstPulseSignal']+i*self['incrementPerPulse']
             stimulus[ind,i] += stimulus_ref[i]
 
 
