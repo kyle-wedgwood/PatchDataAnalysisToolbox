@@ -57,10 +57,10 @@ class PulseFamilyLeakSub( AbstractProtocol):
             if include_flag[pulseGroup]:
                 temp_response = epoch.fetch_response()
 
-                if stim_prop.get( 'pulseType') == 'pre':
+                if stim_prop.get( 'pulseType') == b'pre':
                     response[:,pulseGroup] += temp_response - np.mean( temp_response[pre_ind])
 
-                elif stim_prop.get( 'pulseType') == 'test':
+                elif stim_prop.get( 'pulseType') == b'test':
                     response[:,pulseGroup] += temp_response
                     response_flag[pulseGroup] = 1
 

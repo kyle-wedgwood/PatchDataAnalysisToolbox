@@ -64,6 +64,7 @@ class Base( object):
 
 
     def add_child( self, klass, uuid, counter):
+        print(self)
         '''Creates and add child instance to child_list'''
         self.child_list.append( klass( self, uuid, counter))
 

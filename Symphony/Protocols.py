@@ -7,8 +7,12 @@ from GapFreeBothClass import GapFreeBoth
 from GapFreeClass import GapFree
 from GapFreeRecordClass import GapFreeRecord
 from GapJunctionPulseFamilyClass import GapJunctionPulseFamily
+from LedGeneralStimClass import LedGeneralStim
+from LedStepFamilyClass import LedStepFamily
+from LedStepRampClass import LedStepRamp
 from NogaretClass import Nogaret
 from NogaretFuraHamamatsuClass import NogaretFuraHamamatsu
+from OpsinControlValidationClass import OpsinControlValidation
 from OptoBlueStimClass import OptoBlueStim
 from OrnsteinUhlenbeckClass import OrnsteinUhlenbeck
 from PairedPulseFamilyClass import PairedPulseFamily
@@ -21,6 +25,7 @@ from PulseFamilyLeakSubClass import PulseFamilyLeakSub
 from RampBothClass import RampBoth
 from RampClass import Ramp
 from RepeatPulseDynamicClampClass import RepeatPulseDynamicClamp
+from SingleCellWavesClass import SingleCellWaves
 from SlowInactivationFamilyClass import SlowInactivationFamily
 from StepRampClass import StepRamp
 from TailPulseFamilyClass import TailPulseFamily
@@ -37,16 +42,22 @@ protocols = { 'BlueGeneralStim'        : BlueGeneralStim,
               'GapFree'                : GapFree,
               'GapFreeBoth'            : GapFreeBoth,
               'GapFreeRecord'          : GapFreeRecord,
+              'LedGeneralStim'         : LedGeneralStim,
+              'LedStepFamily'         : LedStepFamily,
+              'LedStepRamp'            : LedStepRamp,
+              'LimeGeneralStim'        : BlueGeneralStim,
               'LimePulseFamily'        : BluePulseFamily,
               'LimeStepRamp'           : BlueStepRamp,
               'Nogaret'                : Nogaret,
               'NogaretFuraHamamatsu'   : NogaretFuraHamamatsu,
               'BluePulseFamily'        : BluePulseFamily,
               'OrnsteinUhlenbeck'      : OrnsteinUhlenbeck,
+              'OpsinControlValidation' : OpsinControlValidation,
               'OptoBlueStim'           : OptoBlueStim,
               'PairedPulseFamily'      : PairedPulseFamily,
               'Pulse'                  : Pulse,
               'PulseFamily'            : PulseFamily,
+              'PulseFamilyKinetix'     : PulseFamily,
               'PulseFamilyBoth'        : PulseFamilyBoth,
               'PulseFamilyDynamicClamp': PulseFamilyDynamicClamp,
               'PulseFamilyInactivation': PulseFamilyInactivation,
@@ -54,6 +65,7 @@ protocols = { 'BlueGeneralStim'        : BlueGeneralStim,
               'Ramp'                   : Ramp,
               'RampBoth'               : RampBoth,
               'RepeatPulseDynamicClamp': RepeatPulseDynamicClamp,
+              'SingleCellWaves'        : SingleCellWaves,
               'SlowInactivationFamily' : SlowInactivationFamily,
               'StepRamp'               : StepRamp,
               'TailPulseFamily'        : TailPulseFamily,
