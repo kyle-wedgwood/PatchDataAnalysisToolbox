@@ -38,6 +38,24 @@ class Epoch( Base):
         return 400*response_data['quantity']
 
 
+    def fetch_other_responses( self):
+        '''Fetches non-amplifier related responses and stores as dictionary'''
+        # Might be better to use this to fetch all response and process later
+        response_group = self.group.get( 'responses')
+
+        exclude_list = ['Amp1', 'Amp2', 'DC1input', 'DC2input']
+        responses = {}
+
+        for response_uuid in response_group.keys():
+            if any([exclude_list[i] in response_uuid for i in range(len(exclude_list))]):
+                continue
+
+            response_data = response_group.get( response_uuid + '/data')
+            name = response_uuid.split('-')[0]
+            responses[name] = response_data['quantity']
+
+        return responses
+
     def fetch_stimulus_pars( self):
         '''Gets stimulus parameters for this epoch'''
         stim_pars = {}

@@ -69,7 +69,8 @@ protocols = { 'BlueGeneralStim'        : BlueGeneralStim,
               'SlowInactivationFamily' : SlowInactivationFamily,
               'StepRamp'               : StepRamp,
               'TailPulseFamily'        : TailPulseFamily,
-              'TriangleRamp'           : TriangleRamp}
+              'TriangleRamp'           : TriangleRamp,
+              'WaveformKinetix'        : Nogaret}
 
 # List of protocols to not include in analysis
 excluded_protocols = [ 'SealTestKyle',

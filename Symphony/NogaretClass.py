@@ -27,6 +27,12 @@ class Nogaret( AbstractProtocol):
             self.response = epoch.fetch_response()
             self.stimulus = epoch.fetch_stimulus()
 
+            # Package up other responses
+            other_responses = epoch.fetch_other_responses()
+            for (key,val) in other_responses.items():
+                setattr(self, key, val)
+
+
         # Update time
         self.noPts = len(self.response)
         self.totalTime = self['noPts']/self['sampleRate']
