@@ -8,6 +8,7 @@ from GapFreeClass import GapFree
 from GapFreeRecordClass import GapFreeRecord
 from GapJunctionPulseFamilyClass import GapJunctionPulseFamily
 from LedGeneralStimClass import LedGeneralStim
+from LedModelDiscriminationClass import LedModelDiscrimination
 from LedStepFamilyClass import LedStepFamily
 from LedStepRampClass import LedStepRamp
 from NogaretClass import Nogaret
@@ -43,7 +44,8 @@ protocols = { 'BlueGeneralStim'        : BlueGeneralStim,
               'GapFreeBoth'            : GapFreeBoth,
               'GapFreeRecord'          : GapFreeRecord,
               'LedGeneralStim'         : LedGeneralStim,
-              'LedStepFamily'         : LedStepFamily,
+              'LedModelDiscrimination' : LedModelDiscrimination,
+              'LedStepFamily'          : LedStepFamily,
               'LedStepRamp'            : LedStepRamp,
               'LimeGeneralStim'        : BlueGeneralStim,
               'LimePulseFamily'        : BluePulseFamily,
